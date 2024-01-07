@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns:xsl="http://www.w3.org/1999/XSL/Transform#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="binarized_group_page2">
+  <Metadata>
+    <Creator>OCR-D/core 2.60.1</Creator>
+    <Created>2024-01-07T23:11:31</Created>
+    <LastChange>2024-01-07T23:11:31</LastChange>
+    <MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+      <Labels>
+        <Label value="0" type="win-size"/>
+        <Label value="sauvola-ms-split" type="impl"/>
+        <Label value="0" type="dpi"/>
+        <Label value="0.34" type="k"/>
+      </Labels>
+    </MetadataItem>
+  </Metadata>
+  <Page imageFilename="image_group/nd1973-09-26_2.jpg" imageWidth="3376" imageHeight="4970" type="content">
+    <AlternativeImage filename="binarized_group/binarized_group_page2-BIN_sauvola-ms-split.png" comments="binarized"/>
+  </Page>
+</PcGts>
