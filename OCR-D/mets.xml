@@ -39,6 +39,13 @@
       <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"find_tables": false, "shrink_polygons": true, "dpi": 0, "padding": 0, "find_staves": false, "sparse_text": false, "overwrite_segments": true, "segmentation_level": "region", "textequiv_level": "region", "block_polygons": false, "overwrite_text": true, "raw_lines": false, "char_whitelist": "", "char_blacklist": "", "char_unblacklist": "", "tesseract_parameters": {}, "xpath_parameters": {}, "xpath_model": {}, "auto_model": false, "oem": "DEFAULT"}</mets:note>
       <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
     </mets:agent>
+    <mets:agent TYPE="OTHER" OTHERTYPE="SOFTWARE" ROLE="OTHER" OTHERROLE="layout/segmentation/region">
+      <mets:name>ocrd-segment-repair v0.1.22</mets:name>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="input-file-grp">segment_group</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="output-file-grp">repaired_group</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="parameter">{"plausibilize": true, "simplify": 0, "plausibilize_merge_min_overlap": 0.9, "sanitize": false, "sanitize_padding": 5}</mets:note>
+      <mets:note xmlns:ocrd="https://ocr-d.de" ocrd:option="page-id"/>
+    </mets:agent>
   </mets:metsHdr>
   <mets:dmdSec ID="DMDLOG_0001">
     <mets:mdWrap MDTYPE="MODS">
@@ -175,6 +182,20 @@
         <mets:FLocat xlink:href="segmentregion_group/segmentregion_group_page4.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
       </mets:file>
     </mets:fileGrp>
+    <mets:fileGrp USE="repaired_group">
+      <mets:file ID="repaired_group_page1" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="repaired_group/repaired_group_page1.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="repaired_group_page2" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="repaired_group/repaired_group_page2.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="repaired_group_page3" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="repaired_group/repaired_group_page3.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+      <mets:file ID="repaired_group_page4" MIMETYPE="application/vnd.prima.page+xml">
+        <mets:FLocat xlink:href="repaired_group/repaired_group_page4.xml" LOCTYPE="OTHER" OTHERLOCTYPE="FILE"/>
+      </mets:file>
+    </mets:fileGrp>
   </mets:fileSec>
   <mets:structMap TYPE="PHYSICAL">
     <mets:div TYPE="physSequence">
@@ -188,6 +209,7 @@
         <mets:fptr FILEID="segment_group_page1"/>
         <mets:fptr FILEID="segmentregion_group_page1.IMG-BIN"/>
         <mets:fptr FILEID="segmentregion_group_page1"/>
+        <mets:fptr FILEID="repaired_group_page1"/>
       </mets:div>
       <mets:div TYPE="page" ID="page2">
         <mets:fptr FILEID="nd1973-09-26_2"/>
@@ -199,6 +221,7 @@
         <mets:fptr FILEID="segment_group_page2"/>
         <mets:fptr FILEID="segmentregion_group_page2.IMG-BIN"/>
         <mets:fptr FILEID="segmentregion_group_page2"/>
+        <mets:fptr FILEID="repaired_group_page2"/>
       </mets:div>
       <mets:div TYPE="page" ID="page3">
         <mets:fptr FILEID="nd1973-09-26_3"/>
@@ -210,6 +233,7 @@
         <mets:fptr FILEID="segment_group_page3"/>
         <mets:fptr FILEID="segmentregion_group_page3.IMG-BIN"/>
         <mets:fptr FILEID="segmentregion_group_page3"/>
+        <mets:fptr FILEID="repaired_group_page3"/>
       </mets:div>
       <mets:div TYPE="page" ID="page4">
         <mets:fptr FILEID="nd1973-09-26_4"/>
@@ -221,6 +245,7 @@
         <mets:fptr FILEID="segment_group_page4"/>
         <mets:fptr FILEID="segmentregion_group_page4.IMG-BIN"/>
         <mets:fptr FILEID="segmentregion_group_page4"/>
+        <mets:fptr FILEID="repaired_group_page4"/>
       </mets:div>
     </mets:div>
   </mets:structMap>
